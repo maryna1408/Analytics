@@ -410,9 +410,10 @@ h5{
   background-color: var(--dark-theme-color);
   border-bottom: 15px solid var(--red-theme-color);
   transform: skewY(-8deg);
-  padding-top: 220px;
   padding-bottom: 95px;
-  
+  --shift: 500px;
+  margin-top: calc(var(--shift) * -1);
+  padding-top: calc(var(--shift) + 250px);
 }
 .hero-container{
   transform: skewY(8deg);
@@ -494,6 +495,7 @@ h5{
   transform: skewY(-8deg);
   padding-top: 200px;
   padding-bottom: 200px;
+  box-shadow: 0 300px 0 var(--dark-theme-color);
 }
 .plans-container{
   transform: skewY(8deg);
