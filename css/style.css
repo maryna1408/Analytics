@@ -371,6 +371,8 @@ h5{
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  margin-bottom: 80px;
 }
 /*=========================COMMON STYLES END=============================*/
 
@@ -382,6 +384,10 @@ h5{
   width: 100%;
   padding: 50px;
   z-index: 999;
+}
+.header-nav{
+  position: relative;
+  left: -10%;
 }
 .button-right{
   border: solid 1px var(--text-color-secondary);
@@ -425,10 +431,6 @@ h5{
   width: 550px;
   padding-bottom: 50px;
 }
-.header-nav{
-  position: relative;
-  left: -10%;
-}
 .hero-image{
   height: 550px;
   width: 810px;
@@ -449,7 +451,6 @@ h5{
   padding-bottom: 100px;
 }
 .main-p{
-  margin-bottom: 80px;
   width: 1060px;
   font-size: 18px;
   text-align: center;
@@ -642,7 +643,7 @@ h5{
     width: 470px;
   }
   .main-p{
-    width: 900px;
+    width: auto;
   }
   .feature-p{
     width: auto;
@@ -673,14 +674,125 @@ h5{
 }
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-  
+  .hero-image{
+    display: none;
+  }
+  .header-nav{
+    position: relative;
+    left: 0;
+  }
+  .hero-container{
+    display: flex;
+    justify-content: center;
+  }
+  body {
+    font-size: 14px;
+  }
+  .nav li:nth-child(n+2){
+    margin-left: 30px;
+  }
+  .feature-icons{
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .section-img{
+    width: 400px;
+    height: auto;
+  }
+  h1{
+    font-size: 42px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  .hero-p{
+    font-size: 14px;
+  }
 }
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-  
+ 
+  body{
+    font-size: 12px;
+  }
+  .logo-span{
+    display: none;
+  }
+  .logo-img{
+    width: 30px;
+    height: 30px;
+  }
+  .button-right{
+    padding: 5px 25px;
+    margin-left: 20px;
+  }
+  .sci li{
+    font-size: 14px;
+  }
+  .sci li:nth-child(n+2){
+    margin-left: 25px;
+  }
+  .article-p{
+    font-size: 14px;
+    width: auto;
+  }
+  .main-section{
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  h2{
+    font-size: 28px;
+  }
+  .content-p{
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .main-section{
+    padding: 40px 0;
+  }
+  .article{
+    margin-bottom: 50px;
+  }
 }
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) and (min-width: 320px) {
-  
+  .sci li:nth-child(n+2){
+    margin-left: 20px;
+  }
+  .section-img{
+    width: 320px;
+  }
+  .features{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
+padding-bottom: 25px;
+  }
+  .feature-section{
+    margin-bottom: 20px;
+    width: 200px;
+  }
+  h1{
+    font-size: 30px;
+    width: auto;
+  }
+  .navbar{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav{
+    margin-bottom: 20px;
+  }
+  .sci{
+    margin-bottom: 50px;
+  }
+  .logo{
+    margin-bottom:20px;
+  }
+  .header{
+    padding-top: 40px;
+  }
 }
 /*=========================ADAPTATION END===========================*/
