@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preload" href="css/style.css" as="font" type="text/plain/" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preload"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      as="style">
+    <link rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -165,36 +170,38 @@
           est.
         </p>
         </div>
-        <div class="plans-sections">
-          <div class="plans-section">
-            <h3>Starter</h3>
-            <p>up to 3 users</p>
-            <div class="line"></div>
-            <span class="price">
-              <h4><i class="fas fa-dollar-sign dollar"></i>29</h4>
-              per month
-            </span>
-            <button class="order-button">Order</button>
-          </div>
-          <div class="plans-section">
-            <h3>Standard</h3>
-            <p>up to 20 users</p>
-            <div class="line"></div>
-            <span class="price">
-              <h4><i class="fas fa-dollar-sign dollar"></i>99</h4>
-              per month
-            </span>
-            <button class="order-button">Order</button>
-          </div>
-          <div class="plans-section">
-            <h3>Premium</h3>
-            <p>up to 200 users</p>
-            <div class="line"></div>
-            <span class="price">
-              <h4><i class="fas fa-dollar-sign dollar"></i>299</h4>
-              per month
-            </span>
-            <button class="order-button">Order</button>
+        <div class="swiper-container plans-slider">
+          <div class="plans-sections swiper-wrapper">
+            <div class="plans-section swiper-slide">
+              <h3>Starter</h3>
+              <p>up to 3 users</p>
+              <div class="line"></div>
+              <span class="price">
+                <h4><i class="fas fa-dollar-sign dollar"></i>29</h4>
+                per month
+              </span>
+              <button class="order-button">Order</button>
+            </div>
+            <div class="plans-section swiper-slide">
+              <h3>Standard</h3>
+              <p>up to 20 users</p>
+              <div class="line"></div>
+              <span class="price">
+                <h4><i class="fas fa-dollar-sign dollar"></i>99</h4>
+                per month
+              </span>
+              <button class="order-button">Order</button>
+            </div>
+            <div class="plans-section swiper-slide">
+              <h3>Premium</h3>
+              <p>up to 200 users</p>
+              <div class="line"></div>
+              <span class="price">
+                <h4><i class="fas fa-dollar-sign dollar"></i>299</h4>
+                per month
+              </span>
+              <button class="order-button">Order</button>
+            </div>
           </div>
         </div>
       </div>
